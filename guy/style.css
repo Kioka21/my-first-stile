@@ -198,10 +198,17 @@ body{
 
 #main{
     flex: 7;
+    z-index: 1;
+        position: relative;
+
 }
 
 #as{
     flex: 3;
+    position: relative;
+    left: -100px;
+    bottom: -10px;
+    z-index: 0;
 }
 
 #food{
@@ -220,4 +227,32 @@ body{
     position: fixed;
     left: 10px;
     top: 5px;
+}
+
+#nav{
+    list-style: none;
+    display: block;
+    width: 50%;
+    text-align: center;
+    gap: 20px;
+}
+
+#nav li{
+    display: inline;
+    background: #fafafa;
+    border: 1px solid black;
+    padding: 0 20px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+#nav li:hover{
+    background: black;
+    color: white;
+    border-radius: 5px;
+    border-color: black;
+}
+
+#nav li:not(:last-of-type){
+    gap: 20px;
 }
