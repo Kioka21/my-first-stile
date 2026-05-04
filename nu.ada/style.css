@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img.Logo {
+    height: 50px;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+}
+
+#nav{
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+#nav li{
+    list-style: none;
+}
+
+#nav li a.my{
+    text-decoration: none;
+    color: #303030;
+    font-size: 20px;
+}
+
+#nav li a.my:hover {
+    text-decoration: none ;
+    color: #006cab;
+}
+
+.main {
+    position: relative;
+    display: block; /* убрать flex, если нужно */
+}
+
+img.main_img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+
+h1{
+    position: absolute;
+    top: 8%; /* меняй это значение, чтобы сдвигать вверх/вниз */
+    left: 58%; /* меняй это, чтобы сдвигать влево/вправо */
+    transform: translate(-50%, -50%);
+    color: black; /* цвет текста */
+    font-size: 50px; /* размер текста */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* тень для видимости */
+    background: wheat; /* фон для читаемости */
+}
+
+p {
+    position: absolute;
+    top: 17.2%; /* меняй это значение, чтобы сдвигать вверх/вниз */
+    left: 72%; /* меняй это, чтобы сдвигать влево/вправо */
+    transform: translate(-50%, -50%);
+    color: black; /* цвет текста */
+    font-size: 29px; /* размер текста */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* тень для видимости */
+    background: wheat; /* фон для читаемости */
+}
+
+h1,
+p {
+  padding: 6px 10px;
+  background: rgba(245, 222, 179, 0.65);
+  border-radius: 10px;
+}
+
+.sss{
+    position: absolute;
+    top: 35%; /* меняй это значение, чтобы сдвигать вверх/вниз */
+    left: 76%; /* меняй это, чтобы сдвигать влево/вправо */
+    transform: translate(-35%, -50%);
+    color: black; /* цвет текста */
+    font-size: 30px; /* размер текста */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* тень для видимости */
+    background: wheat; /* фон для читаемости */
+}
+
+.sss{
+    text-decoration: none;
+    color: black;
+    background: rgba(245, 222, 179, 0.65);
+    border-radius: 21px;
+    padding: 20px 18px;
+}
+
+.sss:hover{
+    text-decoration: none;
+    background-color: #b08551;
+}
